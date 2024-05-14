@@ -8,7 +8,6 @@ import RecentWork from "./Sections/RecentWork";
 import Services from "./Sections/Services";
 
 function App() {
-  // console.log(items);
   return (
     <div className="App">
       <Header />
