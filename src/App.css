@@ -1,38 +1,1037 @@
-.App {
+/**
+ * @license
+ *
+ * Font Family: Bebas Neue
+ * Designed by: Ryoichi Tsunekawa, Dharma Type
+ * URL: https://www.fontshare.com/fonts/bebas-neue
+ * © 2023 Indian Type Foundry
+ *
+ * Font Style:
+ * Bebas Neue Regular
+ *
+*/
+html {
+  scroll-behavior: smooth;
+}
+@font-face {
+  font-family: "BebasNeue-Regular";
+  src: url("./assets/fonts/BebasNeue-Regular.woff2") format("woff2"),
+    url("./assets/fonts/BebasNeue-Regular.woff") format("woff"),
+    url("./assets/fonts/BebasNeue-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+/**
+ * @license
+ *
+ * Font Family: Supreme
+ * Designed by: Jérémie Hornus, Ilya Naumoff
+ * URL: https://www.fontshare.com/fonts/supreme
+ * © 2023 Indian Type Foundry
+ *
+ * Font Styles:
+ * Supreme Variable(Variable font)
+ * Supreme Variable Italic(Variable font)
+ * Supreme Thin
+ * Supreme Thin Italic
+ * Supreme Extralight
+ * Supreme Extralight Italic
+ * Supreme Light
+ * Supreme Light Italic
+ * Supreme Regular
+ * Supreme Italic
+ * Supreme Medium
+ * Supreme Medium Italic
+ * Supreme Bold
+ * Supreme Bold Italic
+ * Supreme Extrabold         
+ * Supreme Extrabold Italic
+ *
+*/
+
+/**
+* This is a variable font
+* You can controll variable axes as shown below:
+* font-variation-settings: 'wght' 800.0;
+*
+* available axes:
+
+* 'wght' (range from 100.0 to 800.0)
+
+*/
+
+@font-face {
+  font-family: "Supreme-Variable";
+  src: url("./assets/fonts/Supreme-Variable.woff2") format("woff2"),
+    url("./assets/fonts/Supreme-Variable.woff") format("woff"),
+    url("./assets/fonts/Supreme-Variable.ttf") format("truetype");
+  font-weight: 100 800;
+  font-display: swap;
+  font-style: normal;
+}
+
+/**
+* This is a variable font
+* You can controll variable axes as shown below:
+* font-variation-settings: 'wght' 800.0;
+*
+* available axes:
+
+* 'wght' (range from 100.0 to 800.0)
+
+*/
+
+@font-face {
+  font-family: "Supreme-VariableItalic";
+  src: url("./assets/fonts/Supreme-VariableItalic.woff2") format("woff2"),
+    url("./assets/fonts/Supreme-VariableItalic.woff") format("woff"),
+    url("./assets/fonts/Supreme-VariableItalic.ttf") format("truetype");
+  font-weight: 100 800;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Supreme-Thin";
+  src: url("./assets/fonts/Supreme-Thin.woff2") format("woff2"),
+    url("./assets/fonts/Supreme-Thin.woff") format("woff"),
+    url("./assets/fonts/Supreme-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Supreme-ThinItalic";
+  src: url("./assets/fonts/Supreme-ThinItalic.woff2") format("woff2"),
+    url("./assets/fonts/Supreme-ThinItalic.woff") format("woff"),
+    url("./assets/fonts/Supreme-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Supreme-Extralight";
+  src: url("./assets/fonts/Supreme-Extralight.woff2") format("woff2"),
+    url("./assets/fonts/Supreme-Extralight.woff") format("woff"),
+    url("./assets/fonts/Supreme-Extralight.ttf") format("truetype");
+  font-weight: 200;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Supreme-ExtralightItalic";
+  src: url("./assets/fonts/Supreme-ExtralightItalic.woff2") format("woff2"),
+    url("./assets/fonts/Supreme-ExtralightItalic.woff") format("woff"),
+    url("./assets/fonts/Supreme-ExtralightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Supreme-Light";
+  src: url("./assets/fonts/Supreme-Light.woff2") format("woff2"),
+    url("./assets/fonts/Supreme-Light.woff") format("woff"),
+    url("./assets/fonts/Supreme-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Supreme-LightItalic";
+  src: url("./assets/fonts/Supreme-LightItalic.woff2") format("woff2"),
+    url("./assets/fonts/Supreme-LightItalic.woff") format("woff"),
+    url("./assets/fonts/Supreme-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Supreme-Regular";
+  src: url("./assets/fonts/Supreme-Regular.woff2") format("woff2"),
+    url("./assets/fonts/Supreme-Regular.woff") format("woff"),
+    url("./assets/fonts/Supreme-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Supreme-Italic";
+  src: url("./assets/fonts/Supreme-Italic.woff2") format("woff2"),
+    url("./assets/fonts/Supreme-Italic.woff") format("woff"),
+    url("./assets/fonts/Supreme-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Supreme-Medium";
+  src: url("./assets/fonts/Supreme-Medium.woff2") format("woff2"),
+    url("./assets/fonts/Supreme-Medium.woff") format("woff"),
+    url("./assets/fonts/Supreme-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Supreme-MediumItalic";
+  src: url("./assets/fonts/Supreme-MediumItalic.woff2") format("woff2"),
+    url("./assets/fonts/Supreme-MediumItalic.woff") format("woff"),
+    url("./assets/fonts/Supreme-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Supreme-Bold";
+  src: url("./assets/fonts/Supreme-Bold.woff2") format("woff2"),
+    url("./assets/fonts/Supreme-Bold.woff") format("woff"),
+    url("./assets/fonts/Supreme-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Supreme-BoldItalic";
+  src: url("./assets/fonts/Supreme-BoldItalic.woff2") format("woff2"),
+    url("./assets/fonts/Supreme-BoldItalic.woff") format("woff"),
+    url("./assets/fonts/Supreme-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Supreme-Extrabold";
+  src: url("./assets/fonts/Supreme-Extrabold.woff2") format("woff2"),
+    url("./assets/fonts/Supreme-Extrabold.woff") format("woff"),
+    url("./assets/fonts/Supreme-Extrabold.ttf") format("truetype");
+  font-weight: 800;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Supreme-ExtraboldItalic";
+  src: url("./assets/fonts/Supreme-ExtraboldItalic.woff2") format("woff2"),
+    url("./assets/fonts/Supreme-ExtraboldItalic.woff") format("woff"),
+    url("./assets/fonts/Supreme-ExtraboldItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-display: swap;
+  font-style: italic;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: var(--accent);
+}
+
+.App,
+body {
+  background-color: #0e0d0d;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--shade);
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+:root {
+  --primary: #fd5240;
+  --accent: #eaeaea;
+  --shade: #ea8f85;
+  --shade: #ea8f85;
+  --secondary: #292d32;
+  --border: rgba(234, 234, 234, 0.1);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 32px auto;
+  background: rgba(13, 4, 3, 0.5);
+  backdrop-filter: blur(8px);
+  padding: 4px 24px;
+  border-radius: 1000px;
+  transition: all ease-in 0.3s;
+}
+
+.fixed {
+  position: fixed;
+  width: 100%;
+  margin: 0 auto;
+  transition: all ease-in 0.3s;
+  top: 0;
+}
+
+.cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
+
+.cta1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+  width: fit-content;
+}
+
+.button:hover {
+  color: var(--primary);
+  transition: all ease 0.3s;
+}
+
+.button:hover img {
+  translate: 2px -1px;
+  transition: all ease 0.3s;
+}
+
+.filled-button:hover {
+  box-shadow: -4px 4px 0px #cbaca9;
+  color: var(--accent);
+  transition: all ease 0.3s;
+}
+
+.filled-button {
+  background: var(--primary);
+  border-radius: 47px;
+  padding: 14px 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: fit-content;
+}
+
+.cta a {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+}
+
+.cta a:hover {
+  color: var(--primary);
+  transition: all ease 0.3s;
+}
+
+.supreme24med {
+  font-family: "Supreme";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 48px;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  margin-bottom: 8px;
+}
+
+.supreme22med {
+  font-family: "Supreme";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  margin-bottom: 8px;
+}
+
+.liink:hover {
+  color: var(--primary) !important;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+
+.bebas108 {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 108px;
+  line-height: 130px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.supreme32reg {
+  font-family: "Supreme";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bebas24 {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex-row-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: var(--secondary);
+  background: var(--shade);
+}
+
+::selection {
+  color: var(--secondary);
+  background: var(--shade);
+}
+
+.mb64 {
+  margin-bottom: 64px;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: end;
+}
+
+.gap16 {
+  gap: 16px;
+}
+
+.hero {
+  height: 78vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-top: 160px;
+  align-items: center;
+  /* background-image: url("./assets/images/untitled.gif");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+.scrollicon {
+  width: 48px;
+  height: 48px;
+}
+
+.recentwork {
+  padding-top: 224px;
   display: flex;
   flex-direction: column;
+  gap: 80px;
+}
+
+.project-cta img {
+  width: 24px;
+  height: 24px;
+}
+.row {
+  /* display: flex;
+  gap: 120px;
+  flex-direction: column; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 120px 40px;
+}
+
+.bebas48 {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 72px;
+  text-transform: capitalize;
+}
+
+.supreme24reg {
+  font-family: "Supreme";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.gap24 {
+  gap: 24px;
+}
+
+.gap10 {
+  gap: 10px;
+}
+
+.gap8 {
+  gap: 8px;
+}
+
+.project-card {
+  max-width: 520px;
+}
+
+.project-card-details {
+  padding: 32px;
+}
+
+.supreme24bold {
+  font-family: "Supreme";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.mb16 {
+  margin-bottom: 16px;
+}
+
+.supreme18light {
+  font-family: "Supreme";
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.mt200 {
+  margin-top: 200px;
+}
+
+.mb80 {
+  margin-bottom: 80px;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  padding: 48px 24px;
+  gap: 32px;
+  width: 251px;
+  border: 1px solid rgba(234, 234, 234, 0.1);
+}
+
+.supreme15reg {
+  font-family: "Supreme";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.supreme15light {
+  font-family: "Supreme";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+li {
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+
+.services-grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.max-width467 {
+  max-width: 500px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.flex-row-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+
   align-items: center;
+  padding: 88px;
+  gap: 48px;
+  background: rgba(234, 234, 234, 0.1);
+  border-radius: 8px;
+  margin-bottom: 160px !important;
+}
+
+.top {
+  width: 100%;
+}
+
+.top h1 {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 72px;
+  text-transform: capitalize;
+}
+
+.top span {
+  background: linear-gradient(267.27deg, #e1402f 58.01%, #fd5240 100.31%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.top .button {
+  max-width: 100%;
+}
+
+.centerr {
+  width: 100%;
+}
+
+.centerr p {
+  font-family: "Supreme";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+
+.centerr a {
+  font-family: "Supreme";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.centerr .sm {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.smlink {
+  background: rgba(234, 234, 234, 0.1);
+  border-radius: 50px;
+  padding: 12px 12px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+.smlink:hover {
+  background-color: var(--primary);
+  transition: all ease 0.3s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.buttom {
+  font-family: "Supreme";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.service-card div {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.menu,
+.menu-content {
+  display: none;
+  transition: all ease 0.3s;
+}
+
+.none {
+  display: none;
+  transition: all ease 0.3s;
+}
+
+.project-cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.scroll-downs {
+  width: 34px;
+  height: 55px;
+}
+
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+  animation-iteration-count: infinite;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 0;
   }
-  to {
-    transform: rotate(360deg);
+  10% {
+    transform: translateY(0);
+    opacity: 1;
   }
+  100% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  /* body {
+    background-color: lightblue;
+  } */
+
+  header {
+    margin-right: 24px;
+    margin-left: 24px;
+  }
+
+  .container {
+    padding: 0 24px;
+  }
+
+  .hero {
+    padding: 0 24px;
+    height: 72vh;
+    margin-top: 120px;
+  }
+
+  .bebas108 {
+    font-size: 73px;
+    line-height: 109px;
+  }
+
+  .hero .flex-row-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+  }
+
+  .project-card {
+    max-width: unset;
+  }
+
+  /* .project-card img {
+    width: 100%;
+    max-height: 320px;
+  } */
+
+  .services-grid {
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .service-card {
+    width: 340px;
+  }
+
+  .flex-row-top {
+    flex-direction: column;
+  }
+
+  .max-width467 {
+    max-width: none;
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  footer {
+    padding: 88px !important;
+    margin: 0 24px;
+  }
+
+  footer .flex-row-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 120px 0;
+  }
+
+  .project-card img {
+    width: 100%;
+    max-height: auto !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 0 24px;
+  }
+
+  header .cta {
+    display: none;
+  }
+
+  .flex-row-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .scrollicon {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    cursor: pointer;
+    transition: all ease 0.3s;
+  }
+
+  .menu-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background: rgba(13, 4, 3, 0.9);
+    backdrop-filter: blur(8px);
+    position: fixed;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transition: all ease 0.3s;
+  }
+
+  .menu-content .cta1 {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .cta1 a {
+    font-family: "Bebas Neue";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: 0.04em;
+  }
+
+  .x {
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    cursor: pointer;
+  }
+
+  .hero .button {
+    margin-top: 40px;
+  }
+
+  .bebas108 {
+    font-size: 49px;
+    line-height: 73px;
+  }
+
+  .supreme24med {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .supreme32reg {
+    font-size: 22px;
+    line-height: 33px;
+  }
+
+  .hero .flex-row-center {
+    gap: 8px;
+  }
+
+  .hero {
+    margin-top: 72px;
+  }
+
+  .container-header,
+  .container-header a {
+    flex-direction: row !important;
+  }
+
+  .bebas48 {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  .row {
+    gap: 72px;
+  }
+
+  .mb80 {
+    margin-bottom: 72px;
+  }
+
+  .service-card .flex-row-center {
+    flex-direction: row;
+  }
+
+  .service-card {
+    width: 100%;
+  }
+
+  .header {
+    margin: 16px auto;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .bebas48 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .supreme24reg {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .supreme24bold {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .supreme18light {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .project-card-details {
+    padding: 24px;
+  }
+
+  .button,
+  .filled-button {
+    width: max-content;
+    max-width: max-content;
+  }
+
+  footer {
+    padding: 88px 24px !important;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .bebas108 {
+    font-size: 30px;
+    line-height: 54px;
+  }
+  .supreme32reg {
+    font-size: 16px;
+    line-height: 27px;
+  }
+  .bebas24 {
+    font-size: 21px;
+    line-height: 30px;
+  }
+
+  .button {
+    font-size: 15px;
+  }
+  .hero {
+    margin-top: 100px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
 }
