@@ -6,7 +6,6 @@ import ScrollReveal from "scrollreveal";
 function Hero() {
   useEffect(() => {
     ScrollReveal().reveal(".hero", { delay: 100 });
-
     ScrollReveal().reveal(".h3", { delay: 500 });
     ScrollReveal().reveal(".h1", { delay: 700 });
     ScrollReveal().reveal(".h2", { delay: 1000 });

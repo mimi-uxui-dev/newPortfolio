@@ -33,6 +33,9 @@ function Header() {
             <div className="cta1">
               <a href="#projects">Projects</a>
             </div>
+            <div className="cta1">
+              <a href="/blog">Blog</a>
+            </div>
             <img src={smallline} alt="" />
             <a
               href="https://calendly.com/mimi-khoudour"

@@ -466,6 +466,11 @@ body {
   gap: 16px;
 }
 
+.textCenter {
+  text-align: center;
+  margin-top: 200px;
+}
+
 .hero {
   height: 78vh;
   display: flex;
